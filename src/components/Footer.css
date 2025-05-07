@@ -1,0 +1,129 @@
+.footer {
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: var(--space-6) 0 var(--space-3);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo .logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+  display: inline-block;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.footer-logo p {
+  color: var(--color-text-secondary);
+  max-width: 300px;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-column {
+  margin-left: var(--space-4);
+}
+
+.footer-links-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-3);
+  color: var(--color-text-primary);
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-column ul li {
+  margin-bottom: var(--space-2);
+}
+
+.footer-links-column ul li a {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer-links-column ul li a:hover {
+  color: var(--color-accent-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+  margin-right: var(--space-2);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background-color: var(--color-accent-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    margin-bottom: var(--space-4);
+  }
+  
+  .footer-links {
+    flex-wrap: wrap;
+  }
+  
+  .footer-links-column {
+    margin-left: 0;
+    width: 50%;
+    margin-bottom: var(--space-4);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+  }
+  
+  .social-links {
+    margin-bottom: var(--space-3);
+  }
+}
