@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 6%; /* Original Dark */
+    --foreground: 210 40% 98%;
+
+    /* Updated for new theme */
+    --background-dark: 240 10% 4%; /* Near black for page bg */
+    --card-dark: 240 6% 12%; /* Dark grey for cards */
+    --primary-purple: 260 85% 66%; /* Vibrant Purple */
+    --border-purple: 260 85% 66%;
+    --muted-dark: 240 5% 25%;
+    --muted-foreground-dark: 240 5% 65%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 260 85% 66%; /* Mapped to new purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 6% 12%; /* Mapped to new card color */
+    --muted-foreground: 240 5% 65%;
+    --accent: 260 85% 66%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 260 85% 70%;
+    --radius: 0.75rem;
+  }
+
+  /* Remove dark theme overrides since we are going dark-only */
+  .dark {
+     /* These can be removed or harmonized with the root */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background-color: hsl(var(--background-dark));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Remove utility classes that are no longer needed */
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
