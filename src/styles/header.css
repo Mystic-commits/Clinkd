@@ -1,0 +1,113 @@
+header {
+  background: rgba(24,24,27,0.85);
+  color: #fff;
+  padding: 0.75rem 0 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom: 1px solid #23232a;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.header-gradient {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #6d28d9 0%, #6366f1 100%);
+  border-radius: 0 0 12px 12px;
+  z-index: 2;
+  opacity: 0.7;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 3;
+  min-height: 64px;
+}
+.header-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #a855f7;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+}
+.header-nav a:hover, .header-nav a.active {
+  color: #a855f7;
+  background: #23232a;
+}
+.header-login-btn {
+  border: 1.5px solid #a855f7;
+  color: #a855f7;
+  background: transparent;
+  border-radius: 24px;
+  padding: 0.35rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.header-login-btn:hover {
+  background: #a855f7;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+  .header-nav {
+    gap: 1.2rem;
+  }
+  .header-logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 56px;
+    padding: 0 0.5rem;
+  }
+  .header-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    align-items: flex-start;
+  }
+  .header-login-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+} 
