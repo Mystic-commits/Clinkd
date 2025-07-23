@@ -1,12 +1,11 @@
-# React + Vite
+# 🎉 Clinkd Fest – Discover & Wishlist College Events
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clinkd is a sleek, responsive, frontend-only React web app designed to help students explore, discover, and wishlist exciting college events and concerts. Think of it as the college version of BookMyShow — tailor-made for campus life.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 **Browse Events**: Explore a wide range of upcoming college events via a live API.
+- 💖 **Add to Wishlist**: Shortlist events you're interested in and access them on your profile page.
+- 👤 **Login UI Ready**: Clean login/signup interface for future authentication integration.
+- 📱 **Fully Responsive**: Optimized for desktop, tablet, and mobile experiences.
+- ✨ **Modern UI**: Styled with smooth animations and a vibrant, minimalistic design.
