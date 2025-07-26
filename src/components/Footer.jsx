@@ -5,13 +5,19 @@ import { Instagram, Twitter, Facebook, Youtube } from "lucide-react";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="footer-main">
         <div className="footer-col">
-          <span className="footer-logo">Clikd <span style={{color: '#6366f1'}}>Fest</span></span>
-          <div style={{color: '#a3a3a3', marginBottom: 12}}>Connecting college students with festival partners</div>
+          <span className="footer-title">Clikd <span className="footer-title-accent">Fest</span></span>
+          <div className="footer-desc">Connecting college students with festival partners</div>
+          <div className="footer-socials">
+            <a href="#"><Instagram /></a>
+            <a href="#"><Twitter /></a>
+            <a href="#"><Facebook /></a>
+            <a href="#"><Youtube /></a>
+          </div>
         </div>
         <div className="footer-col">
-          <div style={{fontWeight: 600, marginBottom: 8}}>Site Links</div>
+          <div className="footer-col-title">Site Links</div>
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
             <li><a href="/events">Events</a></li>
@@ -20,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-col">
-          <div style={{fontWeight: 600, marginBottom: 8}}>Resources</div>
+          <div className="footer-col-title">Resources</div>
           <ul className="footer-resources">
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Partner Guide</a></li>
@@ -29,18 +35,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-col">
-          <div style={{fontWeight: 600, marginBottom: 8}}>Contact Us</div>
-          <div className="footer-contact">yugjohri520@gm.com</div>
+          <div className="footer-col-title">Contact Us</div>
+          <div className="footer-contact">yugjohri520@gmail.com</div>
           <div className="footer-contact">+91 7247076274</div>
-          <div className="footer-contact" style={{fontWeight: 600, marginTop: 8}}>Delhi, India</div>
+          <div className="footer-contact footer-contact-location">Delhi, India</div>
         </div>
       </div>
-      <div className="footer-social">
-        <a href="#"><Instagram /></a>
-        <a href="#"><Twitter /></a>
-        <a href="#"><Facebook /></a>
-        <a href="#"><Youtube /></a>
-      </div>
+      <div className="footer-divider" />
       <div className="footer-bottom">&copy; {new Date().getFullYear()} Clikd Fest. All rights reserved.</div>
     </footer>
   );

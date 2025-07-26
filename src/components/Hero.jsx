@@ -1,18 +1,21 @@
 import React from "react";
-import "../styles/home.css";
+import "../fonts.css";
+import "../global.css";
+import heroImg from "../assets/hero-concert.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <section className="home-hero">
-      <div className="home-hero-animated-overlay" />
-      <div className="home-hero-content">
-        <h1 className="home-hero-title">
-          <span className="home-hero-title-gradient">Upcoming</span> <span className="home-hero-title-white">Events</span>
-        </h1>
-        <p className="home-hero-subtitle">Discover and book tickets for the hottest festivals and concerts</p>
-        <button className="home-hero-cta" onClick={() => navigate('/events')}>Find Your Event Partner &rarr;</button>
+    <section className="hero-section-pro">
+      <div className="hero-bg-pro">
+        <img src={heroImg} alt="Concert crowd" className="hero-img-pro" />
+        <div className="hero-gradient-pro" />
+      </div>
+      <div className="hero-content-pro">
+        <h1 className="hero-title-pro">Unleash the <span>Vibe</span>.<br />Find Your Next <span>Festival</span></h1>
+        <p className="hero-subtitle-pro">Discover, connect, and experience the best college events near you.</p>
+        <button className="hero-cta-pro" onClick={() => navigate('/events')}>Explore Events</button>
       </div>
     </section>
   );

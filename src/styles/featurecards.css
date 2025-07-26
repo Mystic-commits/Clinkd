@@ -1,47 +1,49 @@
 .feature-cards {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 4rem 0 4rem 0;
   flex-wrap: wrap;
+  background: none;
 }
 .feature-card {
   background: #23232a;
   border-radius: 1.25rem;
-  padding: 2.5rem 2rem 2rem 2rem;
+  padding: 2.2rem 2rem 1.7rem 2rem;
   color: #fff;
-  box-shadow: 0 2px 16px rgba(99,102,241,0.08);
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
   text-align: center;
   min-width: 220px;
-  border: 1.5px solid #353545;
+  border: 1.2px solid #29293a;
   transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
   position: relative;
+  margin-bottom: 0;
 }
 .feature-card:hover {
-  box-shadow: 0 6px 32px rgba(99,102,241,0.18);
-  border: 1.5px solid #a855f7;
-  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+  border: 1.2px solid #a855f7;
+  transform: translateY(-6px) scale(1.025);
 }
 .feature-card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.1rem;
   color: #a855f7;
-  filter: drop-shadow(0 0 12px #a855f7aa);
-  background: radial-gradient(circle, #a855f7 60%, #6366f1 100%);
+  background: rgba(168,85,247,0.10);
   border-radius: 50%;
-  padding: 0.75rem;
+  padding: 0.7rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 16px #a855f744;
+  box-shadow: none;
+  filter: none;
 }
 .feature-card-title {
-  font-size: 1.15rem;
+  font-size: 1.13rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #fff;
 }
 .feature-card-desc {
-  color: #a3a3a3;
+  color: #b0b0b0;
   font-size: 1rem;
 } 

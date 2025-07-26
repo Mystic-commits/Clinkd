@@ -867,15 +867,17 @@ event-card {
 
 /* --- Homepage Event Carousel Section Centered --- */
 .event-section-carousel-centered {
-  background: #23232a;
+  background: #24242b;
   border-radius: 1.5rem;
-  box-shadow: 0 2px 16px rgba(99,102,241,0.08);
-  padding: 3.5rem 2rem 2.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(99,102,241,0.07);
+  border: 1.5px solid #23232a;
+  padding: 4rem 2.5rem 3.5rem 2.5rem;
   max-width: 1200px;
-  margin: 3rem auto 3rem auto;
+  margin: 3.5rem auto 3.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: box-shadow 0.2s, background 0.2s;
 }
 .event-carousel-row-carousel-centered {
   width: 100%;
@@ -916,7 +918,7 @@ event-card {
 }
 @media (max-width: 900px) {
   .event-section-carousel-centered {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
   .event-carousel-cards-carousel-centered {
     gap: 0.7rem;
@@ -955,6 +957,10 @@ event-card {
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
   scrollbar-width: none; /* Firefox */
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
 .event-carousel-cards-horizontal-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
@@ -964,6 +970,28 @@ event-card {
   scroll-snap-align: start;
   width: 340px;
   max-width: 90vw;
+}
+.event-carousel-card-anim {
+  background: #23232a;
+  border-radius: 1.25rem;
+  border: 1.2px solid #29293a;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+  padding: 1.2rem 1.2rem 1.1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  min-width: 320px;
+  max-width: 340px;
+  width: 100%;
+  min-height: 340px;
+  max-height: 420px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.22s, transform 0.22s;
+}
+.event-carousel-card-anim:hover {
+  box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+  transform: translateY(-7px) scale(1.03);
 }
 
 /* --- Full-Width Events Page --- */
@@ -1099,4 +1127,24 @@ event-card {
     gap: 1rem;
     padding: 0 1vw;
   }
+} 
+
+.event-card-skeleton {
+  background: #23232a;
+  border-radius: 1.25rem;
+  border: 1.2px solid #29293a;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+  min-width: 320px;
+  max-width: 340px;
+  width: 100%;
+  min-height: 340px;
+  max-height: 420px;
+  display: flex;
+  flex-direction: column;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
 } 
