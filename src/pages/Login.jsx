@@ -126,7 +126,7 @@ const Login = () => {
         <div className="login-split-brand">
           <div className="login-split-festival-bg">
             <img 
-              src="/src/assets/festival-login-bg.jpg" 
+              src="/festival-login-bg.jpg" 
               alt="Festival background" 
               className="login-split-festival-image"
             />
