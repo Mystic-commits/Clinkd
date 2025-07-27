@@ -125,6 +125,11 @@ const Login = () => {
         {/* Right: Festival Image */}
         <div className="login-split-brand">
           <div className="login-split-festival-bg">
+            <img 
+              src="/src/assets/festival-login-bg.jpg" 
+              alt="Festival background" 
+              className="login-split-festival-image"
+            />
             <div className="login-split-festival-overlay">
               <div className="login-split-logo">Clikd <span>Fest</span></div>
               <div className="login-split-brand-accent" />

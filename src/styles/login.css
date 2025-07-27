@@ -524,21 +524,35 @@
     radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+  overflow: hidden;
+}
+
+.login-split-festival-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.8;
+  filter: brightness(0.7) contrast(1.2);
 }
 
 .login-split-festival-overlay {
   width: 90%;
   height: 90%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
 }
 .login-split-logo {
   font-size: 2.2rem;
@@ -546,8 +560,8 @@
   color: #fff;
   letter-spacing: 0.01em;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  z-index: 2;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  z-index: 3;
   position: relative;
 }
 .login-split-logo span {
@@ -559,12 +573,12 @@
   height: 120px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   bottom: -60px;
   right: -60px;
-  z-index: 1;
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  z-index: 3;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
   animation: float 6s ease-in-out infinite;
 }
 
