@@ -18,7 +18,6 @@ const Contact = () => {
         </p>
       </div>
       <div className="contact-agency-grid">
-        {/* Contact Form */}
         <div className="contact-agency-card contact-agency-form-card">
           <h2 className="contact-agency-card-title">Send us a Message</h2>
           <form onSubmit={handleSubmit} className="contact-agency-form-fields" autoComplete="off">

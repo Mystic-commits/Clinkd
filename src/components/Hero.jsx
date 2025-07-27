@@ -10,10 +10,9 @@ const Hero = () => {
     <section className="hero-section-pro">
       <div className="hero-bg-pro">
         <img src={heroImg} alt="Concert crowd" className="hero-img-pro" />
-        <div className="hero-gradient-pro" />
       </div>
       <div className="hero-content-pro">
-        <h1 className="hero-title-pro">Unleash the <span>Vibe</span>.<br />Find Your Next <span>Festival</span></h1>
+        <h1 className="hero-title-pro">Unleash the <span className="hero-title-gradient-pop">Vibe</span>.<br />Find Your Next <span className="hero-title-gradient-pop">Festival</span></h1>
         <p className="hero-subtitle-pro">Discover, connect, and experience the best college events near you.</p>
         <button className="hero-cta-pro" onClick={() => navigate('/events')}>Explore Events</button>
       </div>

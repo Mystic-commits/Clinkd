@@ -178,7 +178,18 @@
   max-width: 700px;
   margin: 0 auto;
   animation: fadeInUp 1.2s cubic-bezier(.4,2,.3,1);
-  padding: 0 2.5rem;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-title-pro {
   font-family: var(--font-heading);
@@ -186,6 +197,7 @@
   font-weight: 700;
   margin-bottom: 1.2rem;
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .hero-title-pro span {
   background: linear-gradient(90deg, #a855f7 0%, #6366f1 100%);
@@ -196,8 +208,9 @@
 }
 .hero-subtitle-pro {
   font-size: 1.35rem;
-  color: #e0e0e7;
+  color: #f0f0f7;
   margin-bottom: 2.2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .hero-cta-pro {
   display: inline-block;
@@ -1081,6 +1094,11 @@
   border-radius: 0.3rem;
   transform: none;
 }
+.contact-agency-form-row .contact-agency-input-group:first-child {
+  width: 60%;
+  min-width: 120px;
+  margin-right: 1rem;
+}
 .contact-agency-info-list {
   display: flex;
   flex-direction: column;
@@ -1173,4 +1191,14 @@
   .contact-agency-card {
     padding: 1.5rem 0.7rem 1.2rem 0.7rem;
   }
+} 
+.hero-title-gradient-pop {
+  background: linear-gradient(90deg, #a855f7 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 900;
+  filter: brightness(1.2) saturate(1.3);
+  text-shadow: 0 2px 12px rgba(99, 102, 241, 0.25), 0 1px 0 #fff;
 } 

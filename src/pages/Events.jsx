@@ -68,7 +68,7 @@ const Events = () => {
       {/* Header */}
       <div style={{marginBottom: '2.5rem'}}>
         <h1 className="section-title">
-          <span className="event-section-title-gradient">All</span> Events
+          <span className="event-section-title-gradient">All</span>Events
         </h1>
         <p className="section-subtitle">
           Discover exciting college festivals and find your perfect event partner
